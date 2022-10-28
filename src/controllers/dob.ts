@@ -8,7 +8,7 @@ class DOB {
         <h3> 
            Hi  Welcome to my ShareFood assesment test <br>
         </h3> 
-        <p>Navigate to howold?dob=20010416  to calculate age</p>`)
+        <p>Navigate to /howold?dob=<timestamp>  to calculate age</p>`)
     }
 
     
