@@ -5,7 +5,6 @@ import {checkQueryParam} from '../middlewares/error.middleware'
 const router = express.Router();
 
 router.get('/howold', checkQueryParam, dob.calculate_age)
+router.get('/', dob.welcome)
 
 module.exports = router
-
-// sharefood/get-dob?dob=987418998000

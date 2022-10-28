@@ -3,6 +3,11 @@ import { Request, Response } from 'express';
 
 class DOB {
 
+    async welcome(req:Request, res:Response) {
+        return res.status(200).send(`<h1> Welcome! enter ?dob=<timestamp> to calculate age `)
+    }
+
+    
     async calculate_age(req:Request, res:Response) {
         let date_today =  new Date;
         let birth_date: string | any, age;
@@ -21,7 +26,7 @@ class DOB {
         // subtract date today from given dob
         age = date_today.getFullYear() - birth_date.getFullYear();
 
-        return res.status(200).json({current_age: age})
+        return res.status(200).json({current_age: `${age} Year(s)`})
     }   
 }
 
