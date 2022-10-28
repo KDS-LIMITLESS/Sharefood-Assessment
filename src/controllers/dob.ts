@@ -4,7 +4,11 @@ import { Request, Response } from 'express';
 class DOB {
 
     async welcome(req:Request, res:Response) {
-        return res.status(200).send(`<h1> Welcome! enter ?dob=<timestamp> to calculate age `)
+        return res.status(200).send(`
+        <h3> 
+            Welcome! 
+            navigate to sharefood-assesment-api.herokuapp.com/howold?dob=<timestamp> to calculate age 
+        </h3? `)
     }
 
     
@@ -18,7 +22,7 @@ class DOB {
             // subtract date today from given dob
             age = date_today.getFullYear() - birth_date.getFullYear()
             
-            return res.status(200).json({current_age: age})
+            return res.status(200).json({current_age: `${age} Year(s)`})
         }
 
         // type cast query parameter to integer
