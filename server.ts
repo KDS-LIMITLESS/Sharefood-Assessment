@@ -11,7 +11,7 @@ app.use('', require('./src/routes/dob'))
 
 
 
-const PORT = process.env.PORT || 3301
+const PORT = process.env.PORT || 3302
 
 app.listen(PORT, async() => {
     console.log(`Server listening on port ${PORT}`)
