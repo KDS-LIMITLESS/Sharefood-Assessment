@@ -1,8 +1,8 @@
 {
-    "name": "",
+    "name": "Kamah Daniel Somtochukwu",
     "track": "backend",
-    "email": "",
-    "githubUsername": "",
-    "deployedAppURL": "",
-    "explainer": ""
+    "email": "s.kamahjnr@gmail.com",
+    "githubUsername": "KDS-LIMITLESS",
+    "deployedAppURL": "https://sharefood-assesment-api.herokuapp.com",
+    "explainer": "An api that takes an 8 digit timestamp (yyyymmdd) then calculate and returns the exact age till date."
 }
