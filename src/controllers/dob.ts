@@ -8,7 +8,8 @@ class DOB {
         <h3> 
             Welcome! 
             navigate to sharefood-assesment-api.herokuapp.com/howold?dob=<timestamp> to calculate age 
-        </h3? `)
+        </h3? 
+        <p>eg: eg: https://sharefood-assesment-api.herokuapp.com/howold?dob=20010416</p>`)
     }
 
     
