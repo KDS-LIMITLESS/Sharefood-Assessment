@@ -6,10 +6,9 @@ class DOB {
     async welcome(req:Request, res:Response) {
         return res.status(200).send(`
         <h3> 
-            Welcome! 
-            navigate to sharefood-assesment-api.herokuapp.com/howold?dob=<timestamp> to calculate age 
-        </h3? 
-        <p>eg: eg: https://sharefood-assesment-api.herokuapp.com/howold?dob=20010416</p>`)
+            Welcome! To my ShareFood assesment test <br>
+        </h3> 
+        <p>eg: https://sharefood-assesment-api.herokuapp.com/howold?dob=20010416</p>`)
     }
 
     
