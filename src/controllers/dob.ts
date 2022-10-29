@@ -4,7 +4,7 @@ import { Request, Response } from 'express';
 class DOB {
 
     async welcome(req:Request, res:Response) {
-        return res.status(200).send(`
+        return res.status(200).json(`
         <h3> 
            Hi  Welcome to my ShareFood assesment test <br>
         </h3> 
