@@ -1,14 +1,11 @@
 import { Request, Response } from 'express';
+import path from 'path';
 
 
 class DOB {
 
     async welcome(req:Request, res:Response) {
-        return res.status(200).send(`
-        <h3> 
-           Hi  Welcome to my ShareFood assesment test <br>
-        </h3> 
-        <p>Navigate to /howold?dob=<timestamp>  to calculate age</p>`)
+        return res.status(200).sendFile(path.join(__dirname, '../../index.html'))
     }
 
     
