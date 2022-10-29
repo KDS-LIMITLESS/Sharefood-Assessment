@@ -23,14 +23,14 @@ class DOB {
             // subtract date today from given dob
             age = date_today.getFullYear() - birth_date.getFullYear()
             
-            return res.status(200).send(`${age} Year(s)`)
+            return res.status(200).json({age: `${age} Year(s)`})
         }
         // type cast query parameter to integer
         birth_date = new Date(+req.query.dob!)
         // subtract date today from given dob
         age = date_today.getFullYear() - birth_date.getFullYear();
 
-        return res.status(200).send( `${age} Year(s)`)
+        return res.status(200).json({age: `${age} Year(s)`})
     }   
 }
 
